@@ -1,0 +1,311 @@
+06/04/2024 14:53:42 - INFO - __main__ -   dataset:twitter2017   num_train_epochs:12.0
+06/04/2024 14:53:42 - INFO - __main__ -   SA_learning_rate:1e-05  warmup_proportion:0.1
+06/04/2024 14:53:42 - INFO - __main__ -   VG_learning_rate:1e-06   warmup_proportion:0.1
+06/04/2024 14:53:42 - INFO - __main__ -   Namespace(dataset='twitter2017', data_dir='./data/Sentiment_Analysis/twitter2017/%s.pkl', VG_data_dir='./data/Image_Target_Matching//%s.pkl', imagefeat_dir='./data/twitter_images/twitter2017', VG_imagefeat_dir='./data/twitter_images/twitter2017', output_dir='log/twitter2017/', max_seq_length=128, save=True, train_batch_size=32, eval_batch_size=32, SA_learning_rate=1e-05, VG_learning_rate=1e-06, ranking_loss_ratio=0.5, pred_loss_ratio=1.0, num_train_epochs=12.0, warmup_proportion=0.1, seed=42, roi_num=100)
+06/04/2024 14:53:43 - INFO - __main__ -   *************** Running training ***************
+06/04/2024 14:53:43 - INFO - __main__ -   ************************************************** Epoch: 0 *************************************************************
+06/04/2024 14:53:43 - INFO - __main__ -     Num examples = 3562
+06/04/2024 14:53:43 - INFO - __main__ -     Batch size = 32
+06/04/2024 14:53:43 - INFO - __main__ -     Num steps = 1335
+06/04/2024 14:54:56 - INFO - __main__ -   pred_loss:0.7616447705243315
+06/04/2024 14:54:56 - INFO - __main__ -   sentiment_loss:0.9837378130427429
+06/04/2024 14:54:56 - INFO - __main__ -   ***** Running evaluation on Dev Set*****
+06/04/2024 14:54:56 - INFO - __main__ -     SA Num examples = 1176
+06/04/2024 14:54:56 - INFO - __main__ -     Batch size = 32
+06/04/2024 14:55:08 - INFO - __main__ -   ***** Dev Eval results *****
+06/04/2024 14:55:08 - INFO - __main__ -     Dev_rel_acc = 0.4710884353741497
+06/04/2024 14:55:08 - INFO - __main__ -     Dev_senti_F_score = 0.4032603591017034
+06/04/2024 14:55:08 - INFO - __main__ -     Dev_senti_acc = 0.5110544217687075
+06/04/2024 14:55:08 - INFO - __main__ -     Dev_senti_precision = 0.5739328497949189
+06/04/2024 14:55:08 - INFO - __main__ -     Dev_senti_recall = 0.43211810663266975
+06/04/2024 14:55:08 - INFO - __main__ -     nb_eval_examples = 588
+06/04/2024 14:55:08 - INFO - __main__ -     num_valid = 0
+06/04/2024 14:55:08 - INFO - __main__ -   ***** Running evaluation on Test Set *****
+06/04/2024 14:55:08 - INFO - __main__ -     Num examples = 1234
+06/04/2024 14:55:08 - INFO - __main__ -     Batch size = 32
+06/04/2024 14:55:16 - INFO - __main__ -   ***** Test Eval results *****
+06/04/2024 14:55:16 - INFO - __main__ -     Test_senti_F_score = 0.40505336390375685
+06/04/2024 14:55:16 - INFO - __main__ -     Test_senti_acc = 0.49108589951377635
+06/04/2024 14:55:16 - INFO - __main__ -     Test_senti_precision = 0.5502141808120112
+06/04/2024 14:55:16 - INFO - __main__ -     Test_senti_recall = 0.4409250490832428
+06/04/2024 14:55:30 - INFO - __main__ -   ************************************************** Epoch: 1 *************************************************************
+06/04/2024 14:55:30 - INFO - __main__ -     Num examples = 3562
+06/04/2024 14:55:30 - INFO - __main__ -     Batch size = 32
+06/04/2024 14:55:30 - INFO - __main__ -     Num steps = 1335
+06/04/2024 14:56:42 - INFO - __main__ -   pred_loss:0.3772112434463842
+06/04/2024 14:56:42 - INFO - __main__ -   sentiment_loss:0.3911295173955815
+06/04/2024 14:56:42 - INFO - __main__ -   ***** Running evaluation on Dev Set*****
+06/04/2024 14:56:42 - INFO - __main__ -     SA Num examples = 1176
+06/04/2024 14:56:42 - INFO - __main__ -     Batch size = 32
+06/04/2024 14:56:54 - INFO - __main__ -   ***** Dev Eval results *****
+06/04/2024 14:56:54 - INFO - __main__ -     Dev_rel_acc = 0.5153061224489796
+06/04/2024 14:56:54 - INFO - __main__ -     Dev_senti_F_score = 0.6272964098295986
+06/04/2024 14:56:54 - INFO - __main__ -     Dev_senti_acc = 0.6496598639455783
+06/04/2024 14:56:54 - INFO - __main__ -     Dev_senti_precision = 0.6405740378343118
+06/04/2024 14:56:54 - INFO - __main__ -     Dev_senti_recall = 0.6339178815629962
+06/04/2024 14:56:54 - INFO - __main__ -     nb_eval_examples = 588
+06/04/2024 14:56:54 - INFO - __main__ -     num_valid = 0
+06/04/2024 14:56:54 - INFO - __main__ -   ***** Running evaluation on Test Set *****
+06/04/2024 14:56:54 - INFO - __main__ -     Num examples = 1234
+06/04/2024 14:56:54 - INFO - __main__ -     Batch size = 32
+06/04/2024 14:57:02 - INFO - __main__ -   ***** Test Eval results *****
+06/04/2024 14:57:02 - INFO - __main__ -     Test_senti_F_score = 0.6507887451006878
+06/04/2024 14:57:02 - INFO - __main__ -     Test_senti_acc = 0.6709886547811994
+06/04/2024 14:57:02 - INFO - __main__ -     Test_senti_precision = 0.6608884440055731
+06/04/2024 14:57:02 - INFO - __main__ -     Test_senti_recall = 0.6631398963870316
+06/04/2024 14:57:10 - INFO - __main__ -   ************************************************** Epoch: 2 *************************************************************
+06/04/2024 14:57:10 - INFO - __main__ -     Num examples = 3562
+06/04/2024 14:57:10 - INFO - __main__ -     Batch size = 32
+06/04/2024 14:57:10 - INFO - __main__ -     Num steps = 1335
+06/04/2024 14:58:22 - INFO - __main__ -   pred_loss:0.2188231111282394
+06/04/2024 14:58:22 - INFO - __main__ -   sentiment_loss:0.2008999620697328
+06/04/2024 14:58:22 - INFO - __main__ -   ***** Running evaluation on Dev Set*****
+06/04/2024 14:58:22 - INFO - __main__ -     SA Num examples = 1176
+06/04/2024 14:58:22 - INFO - __main__ -     Batch size = 32
+06/04/2024 14:58:34 - INFO - __main__ -   ***** Dev Eval results *****
+06/04/2024 14:58:34 - INFO - __main__ -     Dev_rel_acc = 0.6938775510204082
+06/04/2024 14:58:34 - INFO - __main__ -     Dev_senti_F_score = 0.6623553941350552
+06/04/2024 14:58:34 - INFO - __main__ -     Dev_senti_acc = 0.6836734693877551
+06/04/2024 14:58:34 - INFO - __main__ -     Dev_senti_precision = 0.6671703999759142
+06/04/2024 14:58:34 - INFO - __main__ -     Dev_senti_recall = 0.6646953682664279
+06/04/2024 14:58:34 - INFO - __main__ -     nb_eval_examples = 588
+06/04/2024 14:58:34 - INFO - __main__ -     num_valid = 0
+06/04/2024 14:58:34 - INFO - __main__ -   ***** Running evaluation on Test Set *****
+06/04/2024 14:58:34 - INFO - __main__ -     Num examples = 1234
+06/04/2024 14:58:34 - INFO - __main__ -     Batch size = 32
+06/04/2024 14:58:43 - INFO - __main__ -   ***** Test Eval results *****
+06/04/2024 14:58:43 - INFO - __main__ -     Test_senti_F_score = 0.6933385290735372
+06/04/2024 14:58:43 - INFO - __main__ -     Test_senti_acc = 0.7123176661264181
+06/04/2024 14:58:43 - INFO - __main__ -     Test_senti_precision = 0.6989587868743475
+06/04/2024 14:58:43 - INFO - __main__ -     Test_senti_recall = 0.694763504487069
+06/04/2024 14:58:53 - INFO - __main__ -   ************************************************** Epoch: 3 *************************************************************
+06/04/2024 14:58:53 - INFO - __main__ -     Num examples = 3562
+06/04/2024 14:58:53 - INFO - __main__ -     Batch size = 32
+06/04/2024 14:58:53 - INFO - __main__ -     Num steps = 1335
+06/04/2024 15:00:06 - INFO - __main__ -   pred_loss:0.15608663610847934
+06/04/2024 15:00:06 - INFO - __main__ -   sentiment_loss:0.1169843541325203
+06/04/2024 15:00:06 - INFO - __main__ -   ***** Running evaluation on Dev Set*****
+06/04/2024 15:00:06 - INFO - __main__ -     SA Num examples = 1176
+06/04/2024 15:00:06 - INFO - __main__ -     Batch size = 32
+06/04/2024 15:00:18 - INFO - __main__ -   ***** Dev Eval results *****
+06/04/2024 15:00:18 - INFO - __main__ -     Dev_rel_acc = 0.6785714285714286
+06/04/2024 15:00:18 - INFO - __main__ -     Dev_senti_F_score = 0.6835418069383281
+06/04/2024 15:00:18 - INFO - __main__ -     Dev_senti_acc = 0.6947278911564626
+06/04/2024 15:00:18 - INFO - __main__ -     Dev_senti_precision = 0.6688501961375138
+06/04/2024 15:00:18 - INFO - __main__ -     Dev_senti_recall = 0.7063632694778118
+06/04/2024 15:00:18 - INFO - __main__ -     nb_eval_examples = 588
+06/04/2024 15:00:18 - INFO - __main__ -     num_valid = 0
+06/04/2024 15:00:18 - INFO - __main__ -   ***** Running evaluation on Test Set *****
+06/04/2024 15:00:18 - INFO - __main__ -     Num examples = 1234
+06/04/2024 15:00:18 - INFO - __main__ -     Batch size = 32
+06/04/2024 15:00:26 - INFO - __main__ -   ***** Test Eval results *****
+06/04/2024 15:00:26 - INFO - __main__ -     Test_senti_F_score = 0.7127254718627029
+06/04/2024 15:00:26 - INFO - __main__ -     Test_senti_acc = 0.720421393841167
+06/04/2024 15:00:26 - INFO - __main__ -     Test_senti_precision = 0.7002890571218421
+06/04/2024 15:00:26 - INFO - __main__ -     Test_senti_recall = 0.7304623239438399
+06/04/2024 15:00:35 - INFO - __main__ -   ************************************************** Epoch: 4 *************************************************************
+06/04/2024 15:00:35 - INFO - __main__ -     Num examples = 3562
+06/04/2024 15:00:35 - INFO - __main__ -     Batch size = 32
+06/04/2024 15:00:35 - INFO - __main__ -     Num steps = 1335
+06/04/2024 15:01:47 - INFO - __main__ -   pred_loss:0.12718928690467562
+06/04/2024 15:01:47 - INFO - __main__ -   sentiment_loss:0.07574539253754276
+06/04/2024 15:01:47 - INFO - __main__ -   ***** Running evaluation on Dev Set*****
+06/04/2024 15:01:47 - INFO - __main__ -     SA Num examples = 1176
+06/04/2024 15:01:47 - INFO - __main__ -     Batch size = 32
+06/04/2024 15:01:59 - INFO - __main__ -   ***** Dev Eval results *****
+06/04/2024 15:01:59 - INFO - __main__ -     Dev_rel_acc = 0.6955782312925171
+06/04/2024 15:01:59 - INFO - __main__ -     Dev_senti_F_score = 0.6897758879207601
+06/04/2024 15:01:59 - INFO - __main__ -     Dev_senti_acc = 0.7032312925170068
+06/04/2024 15:01:59 - INFO - __main__ -     Dev_senti_precision = 0.6796968101524681
+06/04/2024 15:01:59 - INFO - __main__ -     Dev_senti_recall = 0.7028228560479128
+06/04/2024 15:01:59 - INFO - __main__ -     nb_eval_examples = 588
+06/04/2024 15:01:59 - INFO - __main__ -     num_valid = 0
+06/04/2024 15:01:59 - INFO - __main__ -   ***** Running evaluation on Test Set *****
+06/04/2024 15:01:59 - INFO - __main__ -     Num examples = 1234
+06/04/2024 15:01:59 - INFO - __main__ -     Batch size = 32
+06/04/2024 15:02:08 - INFO - __main__ -   ***** Test Eval results *****
+06/04/2024 15:02:08 - INFO - __main__ -     Test_senti_F_score = 0.7159869605668393
+06/04/2024 15:02:08 - INFO - __main__ -     Test_senti_acc = 0.7212317666126418
+06/04/2024 15:02:08 - INFO - __main__ -     Test_senti_precision = 0.7083146308564657
+06/04/2024 15:02:08 - INFO - __main__ -     Test_senti_recall = 0.7251512869696232
+06/04/2024 15:02:16 - INFO - __main__ -   ************************************************** Epoch: 5 *************************************************************
+06/04/2024 15:02:16 - INFO - __main__ -     Num examples = 3562
+06/04/2024 15:02:16 - INFO - __main__ -     Batch size = 32
+06/04/2024 15:02:16 - INFO - __main__ -     Num steps = 1335
+06/04/2024 15:03:29 - INFO - __main__ -   pred_loss:0.10702629688949812
+06/04/2024 15:03:29 - INFO - __main__ -   sentiment_loss:0.05156935334560417
+06/04/2024 15:03:29 - INFO - __main__ -   ***** Running evaluation on Dev Set*****
+06/04/2024 15:03:29 - INFO - __main__ -     SA Num examples = 1176
+06/04/2024 15:03:29 - INFO - __main__ -     Batch size = 32
+06/04/2024 15:03:41 - INFO - __main__ -   ***** Dev Eval results *****
+06/04/2024 15:03:41 - INFO - __main__ -     Dev_rel_acc = 0.6564625850340136
+06/04/2024 15:03:41 - INFO - __main__ -     Dev_senti_F_score = 0.6792574448808097
+06/04/2024 15:03:41 - INFO - __main__ -     Dev_senti_acc = 0.7032312925170068
+06/04/2024 15:03:41 - INFO - __main__ -     Dev_senti_precision = 0.6829921135702043
+06/04/2024 15:03:41 - INFO - __main__ -     Dev_senti_recall = 0.6778369142085316
+06/04/2024 15:03:41 - INFO - __main__ -     nb_eval_examples = 588
+06/04/2024 15:03:41 - INFO - __main__ -     num_valid = 0
+06/04/2024 15:03:41 - INFO - __main__ -   ***** Running evaluation on Test Set *****
+06/04/2024 15:03:41 - INFO - __main__ -     Num examples = 1234
+06/04/2024 15:03:41 - INFO - __main__ -     Batch size = 32
+06/04/2024 15:03:49 - INFO - __main__ -   ***** Test Eval results *****
+06/04/2024 15:03:49 - INFO - __main__ -     Test_senti_F_score = 0.7147739510415221
+06/04/2024 15:03:49 - INFO - __main__ -     Test_senti_acc = 0.7260940032414911
+06/04/2024 15:03:49 - INFO - __main__ -     Test_senti_precision = 0.7188596126096126
+06/04/2024 15:03:49 - INFO - __main__ -     Test_senti_recall = 0.7130537446970121
+06/04/2024 15:03:56 - INFO - __main__ -   ************************************************** Epoch: 6 *************************************************************
+06/04/2024 15:03:56 - INFO - __main__ -     Num examples = 3562
+06/04/2024 15:03:56 - INFO - __main__ -     Batch size = 32
+06/04/2024 15:03:56 - INFO - __main__ -     Num steps = 1335
+06/04/2024 15:05:09 - INFO - __main__ -   pred_loss:0.0908431558280575
+06/04/2024 15:05:09 - INFO - __main__ -   sentiment_loss:0.03918255338141201
+06/04/2024 15:05:09 - INFO - __main__ -   ***** Running evaluation on Dev Set*****
+06/04/2024 15:05:09 - INFO - __main__ -     SA Num examples = 1176
+06/04/2024 15:05:09 - INFO - __main__ -     Batch size = 32
+06/04/2024 15:05:21 - INFO - __main__ -   ***** Dev Eval results *****
+06/04/2024 15:05:21 - INFO - __main__ -     Dev_rel_acc = 0.6700680272108843
+06/04/2024 15:05:21 - INFO - __main__ -     Dev_senti_F_score = 0.6803672289707984
+06/04/2024 15:05:21 - INFO - __main__ -     Dev_senti_acc = 0.6955782312925171
+06/04/2024 15:05:21 - INFO - __main__ -     Dev_senti_precision = 0.6767823835954957
+06/04/2024 15:05:21 - INFO - __main__ -     Dev_senti_recall = 0.6870473046237352
+06/04/2024 15:05:21 - INFO - __main__ -     nb_eval_examples = 588
+06/04/2024 15:05:21 - INFO - __main__ -     num_valid = 0
+06/04/2024 15:05:21 - INFO - __main__ -   ***** Running evaluation on Test Set *****
+06/04/2024 15:05:21 - INFO - __main__ -     Num examples = 1234
+06/04/2024 15:05:21 - INFO - __main__ -     Batch size = 32
+06/04/2024 15:05:29 - INFO - __main__ -   ***** Test Eval results *****
+06/04/2024 15:05:29 - INFO - __main__ -     Test_senti_F_score = 0.7152555910201547
+06/04/2024 15:05:29 - INFO - __main__ -     Test_senti_acc = 0.7236628849270664
+06/04/2024 15:05:29 - INFO - __main__ -     Test_senti_precision = 0.7107170284465081
+06/04/2024 15:05:29 - INFO - __main__ -     Test_senti_recall = 0.7216781007402059
+06/04/2024 15:05:29 - INFO - __main__ -   ************************************************** Epoch: 7 *************************************************************
+06/04/2024 15:05:29 - INFO - __main__ -     Num examples = 3562
+06/04/2024 15:05:29 - INFO - __main__ -     Batch size = 32
+06/04/2024 15:05:29 - INFO - __main__ -     Num steps = 1335
+06/04/2024 15:06:41 - INFO - __main__ -   pred_loss:0.08099151848416243
+06/04/2024 15:06:41 - INFO - __main__ -   sentiment_loss:0.029035843842263733
+06/04/2024 15:06:41 - INFO - __main__ -   ***** Running evaluation on Dev Set*****
+06/04/2024 15:06:41 - INFO - __main__ -     SA Num examples = 1176
+06/04/2024 15:06:41 - INFO - __main__ -     Batch size = 32
+06/04/2024 15:06:53 - INFO - __main__ -   ***** Dev Eval results *****
+06/04/2024 15:06:53 - INFO - __main__ -     Dev_rel_acc = 0.6003401360544217
+06/04/2024 15:06:53 - INFO - __main__ -     Dev_senti_F_score = 0.6765800376260627
+06/04/2024 15:06:53 - INFO - __main__ -     Dev_senti_acc = 0.6938775510204082
+06/04/2024 15:06:53 - INFO - __main__ -     Dev_senti_precision = 0.6759849570873429
+06/04/2024 15:06:53 - INFO - __main__ -     Dev_senti_recall = 0.6824452175128689
+06/04/2024 15:06:53 - INFO - __main__ -     nb_eval_examples = 588
+06/04/2024 15:06:53 - INFO - __main__ -     num_valid = 0
+06/04/2024 15:06:53 - INFO - __main__ -   ***** Running evaluation on Test Set *****
+06/04/2024 15:06:53 - INFO - __main__ -     Num examples = 1234
+06/04/2024 15:06:53 - INFO - __main__ -     Batch size = 32
+06/04/2024 15:07:02 - INFO - __main__ -   ***** Test Eval results *****
+06/04/2024 15:07:02 - INFO - __main__ -     Test_senti_F_score = 0.7166664143554375
+06/04/2024 15:07:02 - INFO - __main__ -     Test_senti_acc = 0.7260940032414911
+06/04/2024 15:07:02 - INFO - __main__ -     Test_senti_precision = 0.7157532654444835
+06/04/2024 15:07:02 - INFO - __main__ -     Test_senti_recall = 0.722223296853194
+06/04/2024 15:07:02 - INFO - __main__ -   ************************************************** Epoch: 8 *************************************************************
+06/04/2024 15:07:02 - INFO - __main__ -     Num examples = 3562
+06/04/2024 15:07:02 - INFO - __main__ -     Batch size = 32
+06/04/2024 15:07:02 - INFO - __main__ -     Num steps = 1335
+06/04/2024 15:08:14 - INFO - __main__ -   pred_loss:0.07311605472886373
+06/04/2024 15:08:14 - INFO - __main__ -   sentiment_loss:0.02388625862150793
+06/04/2024 15:08:14 - INFO - __main__ -   ***** Running evaluation on Dev Set*****
+06/04/2024 15:08:14 - INFO - __main__ -     SA Num examples = 1176
+06/04/2024 15:08:14 - INFO - __main__ -     Batch size = 32
+06/04/2024 15:08:26 - INFO - __main__ -   ***** Dev Eval results *****
+06/04/2024 15:08:26 - INFO - __main__ -     Dev_rel_acc = 0.6139455782312925
+06/04/2024 15:08:26 - INFO - __main__ -     Dev_senti_F_score = 0.6791938727718544
+06/04/2024 15:08:26 - INFO - __main__ -     Dev_senti_acc = 0.6947278911564626
+06/04/2024 15:08:26 - INFO - __main__ -     Dev_senti_precision = 0.6776538591564609
+06/04/2024 15:08:26 - INFO - __main__ -     Dev_senti_recall = 0.684747513000973
+06/04/2024 15:08:26 - INFO - __main__ -     nb_eval_examples = 588
+06/04/2024 15:08:26 - INFO - __main__ -     num_valid = 0
+06/04/2024 15:08:26 - INFO - __main__ -   ***** Running evaluation on Test Set *****
+06/04/2024 15:08:26 - INFO - __main__ -     Num examples = 1234
+06/04/2024 15:08:26 - INFO - __main__ -     Batch size = 32
+06/04/2024 15:08:34 - INFO - __main__ -   ***** Test Eval results *****
+06/04/2024 15:08:34 - INFO - __main__ -     Test_senti_F_score = 0.7225302589244359
+06/04/2024 15:08:34 - INFO - __main__ -     Test_senti_acc = 0.7301458670988655
+06/04/2024 15:08:34 - INFO - __main__ -     Test_senti_precision = 0.7201880212330449
+06/04/2024 15:08:34 - INFO - __main__ -     Test_senti_recall = 0.7272759588278954
+06/04/2024 15:08:34 - INFO - __main__ -   ************************************************** Epoch: 9 *************************************************************
+06/04/2024 15:08:34 - INFO - __main__ -     Num examples = 3562
+06/04/2024 15:08:34 - INFO - __main__ -     Batch size = 32
+06/04/2024 15:08:34 - INFO - __main__ -     Num steps = 1335
+06/04/2024 15:09:46 - INFO - __main__ -   pred_loss:0.06501434940312589
+06/04/2024 15:09:46 - INFO - __main__ -   sentiment_loss:0.02092428468167782
+06/04/2024 15:09:46 - INFO - __main__ -   ***** Running evaluation on Dev Set*****
+06/04/2024 15:09:46 - INFO - __main__ -     SA Num examples = 1176
+06/04/2024 15:09:46 - INFO - __main__ -     Batch size = 32
+06/04/2024 15:09:58 - INFO - __main__ -   ***** Dev Eval results *****
+06/04/2024 15:09:58 - INFO - __main__ -     Dev_rel_acc = 0.5935374149659864
+06/04/2024 15:09:58 - INFO - __main__ -     Dev_senti_F_score = 0.6804634941114678
+06/04/2024 15:09:58 - INFO - __main__ -     Dev_senti_acc = 0.6981292517006803
+06/04/2024 15:09:58 - INFO - __main__ -     Dev_senti_precision = 0.6792779510011213
+06/04/2024 15:09:58 - INFO - __main__ -     Dev_senti_recall = 0.6839763398635532
+06/04/2024 15:09:58 - INFO - __main__ -     nb_eval_examples = 588
+06/04/2024 15:09:58 - INFO - __main__ -     num_valid = 0
+06/04/2024 15:09:58 - INFO - __main__ -   ***** Running evaluation on Test Set *****
+06/04/2024 15:09:58 - INFO - __main__ -     Num examples = 1234
+06/04/2024 15:09:58 - INFO - __main__ -     Batch size = 32
+06/04/2024 15:10:07 - INFO - __main__ -   ***** Test Eval results *****
+06/04/2024 15:10:07 - INFO - __main__ -     Test_senti_F_score = 0.7138727298141397
+06/04/2024 15:10:07 - INFO - __main__ -     Test_senti_acc = 0.7236628849270664
+06/04/2024 15:10:07 - INFO - __main__ -     Test_senti_precision = 0.715429857181927
+06/04/2024 15:10:07 - INFO - __main__ -     Test_senti_recall = 0.7131693412756569
+06/04/2024 15:10:07 - INFO - __main__ -   ************************************************** Epoch: 10 *************************************************************
+06/04/2024 15:10:07 - INFO - __main__ -     Num examples = 3562
+06/04/2024 15:10:07 - INFO - __main__ -     Batch size = 32
+06/04/2024 15:10:07 - INFO - __main__ -     Num steps = 1335
+06/04/2024 15:11:19 - INFO - __main__ -   pred_loss:0.059874051480324236
+06/04/2024 15:11:19 - INFO - __main__ -   sentiment_loss:0.01887324891754656
+06/04/2024 15:11:19 - INFO - __main__ -   ***** Running evaluation on Dev Set*****
+06/04/2024 15:11:19 - INFO - __main__ -     SA Num examples = 1176
+06/04/2024 15:11:19 - INFO - __main__ -     Batch size = 32
+06/04/2024 15:11:31 - INFO - __main__ -   ***** Dev Eval results *****
+06/04/2024 15:11:31 - INFO - __main__ -     Dev_rel_acc = 0.5901360544217688
+06/04/2024 15:11:31 - INFO - __main__ -     Dev_senti_F_score = 0.6805199341540206
+06/04/2024 15:11:31 - INFO - __main__ -     Dev_senti_acc = 0.6981292517006803
+06/04/2024 15:11:31 - INFO - __main__ -     Dev_senti_precision = 0.6792182066911527
+06/04/2024 15:11:31 - INFO - __main__ -     Dev_senti_recall = 0.683973835998211
+06/04/2024 15:11:31 - INFO - __main__ -     nb_eval_examples = 588
+06/04/2024 15:11:31 - INFO - __main__ -     num_valid = 0
+06/04/2024 15:11:31 - INFO - __main__ -   ***** Running evaluation on Test Set *****
+06/04/2024 15:11:31 - INFO - __main__ -     Num examples = 1234
+06/04/2024 15:11:31 - INFO - __main__ -     Batch size = 32
+06/04/2024 15:11:39 - INFO - __main__ -   ***** Test Eval results *****
+06/04/2024 15:11:39 - INFO - __main__ -     Test_senti_F_score = 0.7160427862729297
+06/04/2024 15:11:39 - INFO - __main__ -     Test_senti_acc = 0.7252836304700162
+06/04/2024 15:11:39 - INFO - __main__ -     Test_senti_precision = 0.7171584339073783
+06/04/2024 15:11:39 - INFO - __main__ -     Test_senti_recall = 0.7158296007817583
+06/04/2024 15:11:39 - INFO - __main__ -   ************************************************** Epoch: 11 *************************************************************
+06/04/2024 15:11:39 - INFO - __main__ -     Num examples = 3562
+06/04/2024 15:11:39 - INFO - __main__ -     Batch size = 32
+06/04/2024 15:11:39 - INFO - __main__ -     Num steps = 1335
+06/04/2024 15:12:51 - INFO - __main__ -   pred_loss:0.055028326055478485
+06/04/2024 15:12:51 - INFO - __main__ -   sentiment_loss:0.016760173020884395
+06/04/2024 15:12:51 - INFO - __main__ -   ***** Running evaluation on Dev Set*****
+06/04/2024 15:12:51 - INFO - __main__ -     SA Num examples = 1176
+06/04/2024 15:12:51 - INFO - __main__ -     Batch size = 32
+06/04/2024 15:13:03 - INFO - __main__ -   ***** Dev Eval results *****
+06/04/2024 15:13:03 - INFO - __main__ -     Dev_rel_acc = 0.5884353741496599
+06/04/2024 15:13:03 - INFO - __main__ -     Dev_senti_F_score = 0.679785707948296
+06/04/2024 15:13:03 - INFO - __main__ -     Dev_senti_acc = 0.6972789115646258
+06/04/2024 15:13:03 - INFO - __main__ -     Dev_senti_precision = 0.6786542367681538
+06/04/2024 15:13:03 - INFO - __main__ -     Dev_senti_recall = 0.6833315945379569
+06/04/2024 15:13:03 - INFO - __main__ -     nb_eval_examples = 588
+06/04/2024 15:13:03 - INFO - __main__ -     num_valid = 0
+06/04/2024 15:13:03 - INFO - __main__ -   ***** Running evaluation on Test Set *****
+06/04/2024 15:13:03 - INFO - __main__ -     Num examples = 1234
+06/04/2024 15:13:03 - INFO - __main__ -     Batch size = 32
+06/04/2024 15:13:12 - INFO - __main__ -   ***** Test Eval results *****
+06/04/2024 15:13:12 - INFO - __main__ -     Test_senti_F_score = 0.7160649383322858
+06/04/2024 15:13:12 - INFO - __main__ -     Test_senti_acc = 0.7252836304700162
+06/04/2024 15:13:12 - INFO - __main__ -     Test_senti_precision = 0.7172448396168072
+06/04/2024 15:13:12 - INFO - __main__ -     Test_senti_recall = 0.7160183986936532
+06/04/2024 15:13:12 - INFO - __main__ -   max_dev_senti_acc: 0.7032312925170068 
+06/04/2024 15:13:12 - INFO - __main__ -   corresponding_test_sentiment_acc: 0.7260940032414911 
+06/04/2024 15:13:12 - INFO - __main__ -   corresponding_test_sentiment_precision: 0.7172448396168072 
+06/04/2024 15:13:12 - INFO - __main__ -   corresponding_test_sentiment_recall: 0.7160183986936532 
+06/04/2024 15:13:12 - INFO - __main__ -   corresponding_test_sentiment_F_score: 0.7160649383322858 
+06/04/2024 15:13:12 - INFO - __main__ -   best_epoch: 5
